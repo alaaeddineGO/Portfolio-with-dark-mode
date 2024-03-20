@@ -3,10 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+.dark-theme{
+    --primary-color: #212121; 
+    --secondary-color:#edf2fc;;
+}
 body{
     width: 100%;
     height: 100vh;
-    background-color: aliceblue;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     overflow: hidden;
 }
 .container{
@@ -37,7 +46,7 @@ ul li{
 }
 ul li a{
     text-decoration: none;
-    color: black;
+    color: var(--secondary-color);
     padding: 5px 10px;
 }
 ul > a > img{
@@ -60,9 +69,12 @@ ul > a > img{
 .content p{
     font-size: 30px;
 }
+.content span{
+    color: #9767cd;
+}
 .content button{
     padding: 8px 14px;
-    color: aliceblue;
+    color: var(--primary-color);
     font-size: 20px;
     margin: 15px 0 0 15px;
     border-radius: 10px;
