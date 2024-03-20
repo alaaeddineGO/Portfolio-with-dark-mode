@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+}
+.container{
+    width: 95%;
+    height: 100vh;
+    margin-left: 60px;
+}
+header{
+    width: 100%;
+    min-height: 50px;
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 100px;
+    height: 80px;
+}
+ul {
+    display: flex;
+    align-items: center;
+}
+ul li{
+    margin: 0 10px ;
+    font-size: 25px;
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+ul > a > img{
+    width: 50px;
+    left: 50px;
+    margin-left: 10px;
+}
+.content{
+    position: absolute;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.content h2{
+    font-size: 60px;
+    line-height: 80px;
+}
+.content p{
+    font-size: 30px;
+}
+.content button{
+    padding: 8px 14px;
+    color: aliceblue;
+    font-size: 20px;
+    margin: 15px 0 0 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(135deg,rgb(0, 162, 255),rgb(4, 231, 171));
+}
+
+#mou{
+    position: absolute;
+    top: 13%;
+    right: 14%;
+    width: 430px;
+    height: 600px;
+    z-index: 10;
+}
+#pattern{
+    position: absolute;
+    top: 8%;
+    right: 10%;
+    width: 530px;
+    height: 700px;
+}
